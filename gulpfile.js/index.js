@@ -1,23 +1,32 @@
 
 // File extension router
 
-const { watch } = require("gulp"),
-    ts = require("./ts"),
-    pug = require("./pug"),
-    styl = require("./styl");
+const { watch } = require("gulp");
+
+// Configuration preparation
+const wdsOpt = require('../config-wds.js');
 
 exports.watcher = () => {
 
     // TypeScript -> JavaScript
-    watch("app/**/*.ts")
-        .on('change', ts.change);
+    if (wdsOpt.ts) {
+        const ts = require("./ts");
+        watch("app/**/*.ts")
+            .on('change', ts.change);
+    }
 
     // Pug -> HTML
-    watch("app/**/*.pug")
-        .on('change', pug.change);
+    if (wdsOpt.pug) {
+        const pug = require("./pug");
+        watch("app/**/*.pug")
+            .on('change', pug.change);
+    }
 
     // Stylus -> CSS
-    watch("app/**/*.styl")
-        .on('change', styl.change);
+    const styl = require("./styl");
+    if (wdsOpt.styl) {
+        watch("app/**/*.styl")
+            .on('change', styl.change);
+    }
 
 };
