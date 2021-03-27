@@ -4,7 +4,7 @@
 const { watch } = require("gulp");
 
 // Configuration preparation
-const wdsOpt = require('./config/config-wds.js');
+const wdsOpt = require('./config-wds.js');
 
 exports.watcher = () => {
 
