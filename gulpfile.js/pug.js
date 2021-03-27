@@ -4,7 +4,7 @@ const { src, dest } = require('gulp'),
     pug = require('gulp-pug');
 
 // Configuration preparation
-let pugOpt = require('../config-pug.js');
+let pugOpt = require('./config/config-pug.js');
 
 exports.change = path => {
 

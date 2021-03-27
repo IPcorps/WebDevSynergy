@@ -5,8 +5,8 @@ const { src, dest } = require('gulp'),
     terser = require('gulp-terser');
 
 // Preparation for acceleration
-let tsOpt = require('../config-ts.js'),
-    tersOpt = require('../config-ters.js');
+let tsOpt = require('./config/config-ts.js'),
+    tersOpt = require('./config/config-ters.js');
 
 let tsProject = ts.createProject(tsOpt);
 

@@ -4,7 +4,7 @@
   "description": "🌐 Reconfigurable easy way to web development.",
   "main": "index.js",
   "scripts": {
-    "rls": "browser-sync start --config config-bs.js",
+    "rls": "browser-sync start --config gulpfile.js/config/config-bs.js",
     "rfw": "gulp watcher",
     "all": "start npm run rls && start npm run rfw || npm run rls && npm run rfw"
   },

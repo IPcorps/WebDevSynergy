@@ -4,7 +4,7 @@ const { src, dest } = require('gulp'),
     styl = require('gulp-stylus');
 
 // Configuration preparation
-let stylOpt = require('../config-styl.js');
+let stylOpt = require('./config/config-styl.js');
 
 exports.change = path => {
 
