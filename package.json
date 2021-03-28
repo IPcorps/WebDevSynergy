@@ -4,9 +4,10 @@
   "description": "🌐 Reconfigurable easy way to web development.",
   "main": "index.js",
   "scripts": {
-    "rls": "browser-sync start --config gulpfile.js/config/config-bs.js",
     "rfw": "gulp watcher",
-    "all": "start npm run rls && start npm run rfw || npm run rls && npm run rfw"
+    "rls": "browser-sync start --config gulpfile.js/config/config-bs.js",
+    "all": "start npm run rls && start npm run rfw || npm run rls && npm run rfw",
+    "lt": "lt -p 3000 -o"
   },
   "author": "IPcorp",
   "license": "MIT",
@@ -17,6 +18,7 @@
     "gulp-stylus": "^2.7.0",
     "gulp-terser": "^2.0.1",
     "gulp-typescript": "^6.0.0-alpha.1",
+    "localtunnel": "^2.0.1",
     "typescript": "^4.2.3"
   }
 }
