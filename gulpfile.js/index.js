@@ -11,7 +11,7 @@ exports.watcher = () => {
     // TypeScript -> JavaScript
     if (wdsOpt.ts) {
         const ts = require("./ts");
-        watch("app/**/*.ts", "!**/*.d.*")
+        watch(["app/**/*.ts", "!**/*.d.*"])
             .on('change', ts.change);
     }
 
