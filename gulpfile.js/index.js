@@ -9,7 +9,7 @@ const wdsOpt = require('./config-wds.js');
 exports.watcher = () => {
 
     // TypeScript -> JavaScript
-    if (wdsOpt.ts) {
+    if (wdsOpt.ts.use) {
         const ts = require("./ts");
         watch(["app/**/*.ts", "!**/*.d.*"])
             .on('change', ts.change);

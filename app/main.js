@@ -1,1 +1,9 @@
-"use strict";{let e="🙈 I`m here! 🙉";document.addEventListener("DOMContentLoaded",(()=>{document.body.innerText=e})),console.log("And here! 🙊")}
+"use strict";
+// This is a real comment
+{
+    let text = '🙈 I`m here! 🙉';
+    document.addEventListener('DOMContentLoaded', () => {
+        document.body.innerText = text;
+    });
+    console.log("And here! 🙊");
+}
