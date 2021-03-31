@@ -1,6 +1,6 @@
-![Logo](https://user-images.githubusercontent.com/5076458/110127198-666fac00-7dd6-11eb-9822-ccc973f41ee6.png)
-
 <div align="center"><ins>
+
+![Logo](https://user-images.githubusercontent.com/5076458/110127198-666fac00-7dd6-11eb-9822-ccc973f41ee6.png)
 
 [Русский](/README_RU.md)
 
