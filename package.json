@@ -4,9 +4,8 @@
   "description": "🌐 Reconfigurable easy way to web development.",
   "main": "index.js",
   "scripts": {
-    "rfw": "gulp watcher",
     "rls": "browser-sync start --config gulpfile.js/config/config-bs.js",
-    "all": "start npm run rls && start npm run rfw || npm run rls && npm run rfw",
+    "rfw": "gulp watcher",
     "lt": "lt -p 3000 -o"
   },
   "author": "IPcorp",
