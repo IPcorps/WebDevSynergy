@@ -6,7 +6,7 @@
 
 </ins></div>
 
-WebDevSynergy is a simple and highly reconfigurable web development environment that will make coding easier and faster for both novice and experienced developers. All that is needed for the environment to work is an installed [**NodeJS**](https://nodejs.org). The main features of this environment:
+WebDevSynergy is a simple and reconfigurable web development environment that will make coding easier and faster for both novice and experienced developers. All that is needed for the environment to work is an installed [**NodeJS**](https://nodejs.org). The main features of this environment:
 1. **Independence from any IDE** (but nothing interferes, and it is even recommended, to use this environment in conjunction with your preferred IDE).
 2. **High degree of customization** (you can either disable/remove existing modules, or connect new ones according to a given template).
 
