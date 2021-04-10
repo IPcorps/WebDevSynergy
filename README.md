@@ -6,9 +6,9 @@
 
 </ins></div>
 
-WebDevSynergy is a simple and reconfigurable web development environment that will make coding easier and faster for both novice and experienced developers. All that is needed for the environment to work is an installed [**NodeJS**](https://nodejs.org). The main features of this environment:
+WebDevSynergy is a simple and reconfigurable web development environment. All that is needed for the environment to work is an installed [**NodeJS**](https://nodejs.org). Features:
 1. **Independence from any IDE** (but nothing interferes, and it is even recommended, to use this environment in conjunction with your preferred IDE).
-2. **High degree of customization** (you can either disable/remove existing modules, or connect new ones according to a given template).
+2. **Easy customizability** (you can either disable/remove existing modules, or connect new ones according to the template).
 
 In this example, only the following features are implemented:
 1. A "live server" for testing the application in a browser based on [Browsersync](https://www.browsersync.io/).
@@ -18,7 +18,7 @@ In this example, only the following features are implemented:
    * Stylus -> css.
 3. A simple and fast way to show the result of your work over the Internet using [Localtunnel](https://theboroer.github.io/localtunnel-www/)
 
-The [Gulp](https://gulpjs.com/) (task manager) modules are turned on/off through the _config-wds.js_ configuration file.
+The [Gulp](https://gulpjs.com/) (task manager) modules are turned on/off through the _gulpfile.js/config-wds.js_ configuration file.
  
 # How to install and configure.
 Step|Description|Screenshot
@@ -28,13 +28,13 @@ Step|Description|Screenshot
 3| Open your console and **navigate to the unzipped folder**, where run the command  _**npm install**_ to initialize the environment and load the necessary modules.|![04](https://user-images.githubusercontent.com/5076458/110135037-1c3ef880-7ddf-11eb-9054-96694d3ed05b.jpg)
 4| To start, use the following commands:<br>&nbsp;&nbsp;&nbsp;* Starting a "live server" - **npm run rls**.<br>&nbsp;&nbsp;&nbsp;* Starting file monitoring and compiling: typescript -> javascript, pug -> html, etc. - **npm run rfw**.<br>&nbsp;&nbsp;&nbsp;* If necessary show the development result (you need an already working "live server") - **npm run lt**. As a result, you will get a temporary link that you can share, and by which everyone can go to the running " live server" |![05](https://user-images.githubusercontent.com/5076458/110136489-ccf9c780-7de0-11eb-8f44-238394d84fcd.jpg)
 
-And yes, that's all! 🤠 Your development application will be located in the _app_ folder. Now open, for example, in notepad the _main.ts_ file from the _app_ folder, change it and save it. You will see how the page in the browser refreshes and displays the changes.
+Your development application will be located in the _app_ folder (it's customizable). Now open, for example, in notepad the _main.ts_ file from the _app_ folder, change it and save it. You will see how the page in the browser refreshes and displays the changes.
 
-# Under the hood.
+# "Under the hood".
 
- How it works. Saving files with _.ts_, _.pug_, and other extensions is tracked by [Gulp](https://gulpjs.com/) and immediately translated to _.js_, _.​​html_ and other, respectively. In turn, changes in the files with the _.js_, _.html_ and other extensions are monitored by [Browsersync](https://www.browsersync.io/), which will immediately refresh the page in the browser. You can organize your files into separate folders within _app_, [Gulp](https://gulpjs.com/) will always create a final file next to the original. It's simple, isn't it? 🤓
+ How it works. Saving files with _.ts_, _.pug_, and other extensions is tracked by [Gulp](https://gulpjs.com/) and immediately translated to _.js_, _.​​html_ and other, respectively. In turn, changes in the files with the _.js_, _.html_ and other extensions are monitored by [Browsersync](https://www.browsersync.io/), which will immediately refresh the page in the browser. You can organize your files into separate folders within _app_, [Gulp](https://gulpjs.com/) will always create a final file next to the original.
 
-# And as an addition.
+# Note.
 
 Using the features of [Gulp](https://gulpjs.com/), you can add any functionality you need. It shouldn't be difficult to understand the structure of the code in the _gulpfile.js_ folder. [Browsersync](https://www.browsersync.io/) and [Gulp](https://gulpjs.com/) are much more powerful than the capabilities used here. But that's another story, which you can learn more about on their official pages.
 
@@ -92,6 +92,6 @@ Step|Description|Screenshot
 7| You can run tasks from the control line _Ctrl+P_ and type _>Tasks: Run Task_ and then select the desired task.|![18](https://user-images.githubusercontent.com/5076458/113714135-c36dc300-96f0-11eb-9ba0-e2064fc6a16c.gif)
 8| You can also install any manager or task explorer and use it.|![19](https://user-images.githubusercontent.com/5076458/113714168-c799e080-96f0-11eb-8308-d95cccd73345.jpg)
 
-# As a result, we ended up with something like this. 😎
+# As a result, we ended up with something like this 😎 :
 
 ![Fin](https://user-images.githubusercontent.com/5076458/113714180-cb2d6780-96f0-11eb-8cb9-87b3a1f5b942.gif)
