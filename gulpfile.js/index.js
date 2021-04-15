@@ -23,8 +23,8 @@ exports.watcher = () => {
     }
 
     // Stylus -> CSS
-    const styl = require("./styl");
     if (wdsOpt.styl) {
+        const styl = require("./styl");
         watch("app/**/*.styl")
             .on('change', styl.change);
     }
