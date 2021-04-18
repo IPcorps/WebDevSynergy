@@ -7,7 +7,7 @@ const { src, dest } = require('gulp'),
     gulprename = require("gulp-rename");
 
 // Preparation for acceleration
-let wdsOpt = require('./config-wds.js'),
+let wdsOpt = require('./config-wds.js').ts,
     tsOpt = require('./config/config-ts.js'),
     tersOpt = require('./config/config-ters.js');
 
@@ -19,9 +19,9 @@ exports.change = path => {
     src(path)                                                                       // Reading the file 
         .pipe(tsProject())                                                          // TypeScript -> JavaScript
         .on('error', console.log)                                                   // For oops caught a mistake 🙀
-        .pipe(gulpif(wdsOpt.ts.middle, dest('.')))                                  // Saving an intermediate file
-        .pipe(gulpif(wdsOpt.ts.mini, terser(tersOpt)))                              // Javascript minifier and ... what else you want
-        .pipe(gulpif(wdsOpt.ts.extjs, gulprename({ extname: wdsOpt.ts.extjs })))    // Output file extension
+        .pipe(gulpif(wdsOpt.middle, dest('.')))                                     // Saving an intermediate file
+        .pipe(gulpif(wdsOpt.mini, terser(tersOpt)))                                 // Javascript minifier and ... what else you want
+        .pipe(gulpif(wdsOpt.extjs, gulprename({ extname: wdsOpt.extjs })))          // Output file extension
         .pipe(dest('.'));                                                           // Saving the file
 
     // To see something happen
