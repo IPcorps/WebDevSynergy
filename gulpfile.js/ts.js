@@ -27,6 +27,6 @@ exports.change = path => {
         .pipe(dest('.'));                                                                   // Saving the file
 
     // To see something happen
-    console.log('\x1b[36m%s\x1b[0m', path, 'processed');
+    console.log('\x1B[90m%s \x1b[36m%s\x1b[0m', new Date().toLocaleTimeString(), path, 'processed');
 
 }
