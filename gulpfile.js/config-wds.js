@@ -8,7 +8,8 @@ module.exports = {
         // dirTo: "out_js",     // Replacing the path to
         mini: true,             // Using minification
         extjs: ".m.js",         // Output file extension
-        middle: true            // Saving an intermediate non-minified file during minification.
+        middle: true,           // Saving an intermediate non-minified file during minification.
+        dts: true               // Creating a declaration file
     },
     pug: {
         use: true,              // Pug -> HTML
