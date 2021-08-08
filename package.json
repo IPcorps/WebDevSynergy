@@ -7,10 +7,10 @@
     "rfw": "gulp watcher",
     "lt": "lt -p 3000 -o"
   },
-  "author": "IPcorp",
+  "author": "Igor (IPcorp) Patievich",
   "license": "MIT",
   "engines": {
-    "node": ">=14.16.1"
+    "node": ">=14.17.1 <15"
   },
   "devDependencies": {
     "browser-sync": "^2.27.5",
